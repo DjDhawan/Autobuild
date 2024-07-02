@@ -1,0 +1,35 @@
+     A*%%TS  SD  20200518  155832  PITC109     REL-V7R3M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R REC001
+     A*%%TS  SD  20200518  155832  PITC109     REL-V7R3M0  5770-WDS
+     A                                      CA03(03 'exit')
+     A                                      CA05(05 'Refresh')
+     A                                  2  2DATE
+     A                                      EDTCDE(Y)
+     A                                  3  2TIME
+     A                                  4  2USER
+     A                                  2 33'C 2 F CONVERTOR'
+     A                                      DSPATR(UL)
+     A                                      COLOR(WHT)
+     A                                  8 24'ENTER Celsius...:'
+     A                                 10 24'Fahrenheit......:'
+     A            FAR            6  2O 10 43EDTWRD('    .  ')
+     A            CEL            6Y 2I  8 43
+     A                                 22 11'F3 = Exit'
+     A                                 22 43'F5 = Refresh'
+     A          R REC002
+     A                                  2 32'C 2 F convertor'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                  2  4DATE(*SYS *YY)
+     A                                  3  4TIME
+     A                                  4  4USER
+     A            DSPMSG        57   O  6 14COLOR(RED)
+     A                                      DSPATR(BL)
+     A*%%RS+<record-sequences>
+     A*%%RS+ <sequence name="NXTSCRN">
+     A*%%RS+  <device type="display" width="80" height="24" />
+     A*%%RS+  <record-write record-format="REC002" />
+     A*%%RS+ </sequence>
+     A*%%RS </record-sequences>
