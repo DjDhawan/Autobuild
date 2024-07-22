@@ -1,7 +1,7 @@
      FC2FDSP    CF   E             WORKSTN
      D
       /free
-          DoW *in03 = *off;
+          Dou *in03;
               Exfmt REC001;
               If (*in05 = *on);
                  Cel= 0;
